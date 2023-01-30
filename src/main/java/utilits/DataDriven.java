@@ -1,19 +1,29 @@
 package utilits;
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.List;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 public class DataDriven {
     
-    @Test
-    // @DataProvider(name="DataProvider")
-    public static void main(String[] args) throws IOException{
+    
+    @DataProvider(name="DataProvider")
+    public Object[][] dataFetch() throws EncryptedDocumentException, IOException{
 
-        PropertiesDataOfAdminPanel readdata = new PropertiesDataOfAdminPanel();
-        List<String> datafromfile = readdata.propertiesData();
-        System.out.println(datafromfile.get(0));
+        FileInputStream datafile=new FileInputStream("src\\main\\java\\Resource\\Data.xlsx"); 
+        Workbook workbook = WorkbookFactory.create(datafile);
+        Sheet sheet = workbook.getSheet("Orders");
+        Object[][] data=new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+        for(int i=0; i<sheet.getLastRowNum(); i++ ){
+            for(int j=0; j<sheet.getRow(0).getLastCellNum();j++){
+                data[i][j]=sheet.getRow(1+i).getCell(j);
+            }   
+        }
+        return data;
     }
 }

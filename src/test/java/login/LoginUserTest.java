@@ -1,24 +1,22 @@
 package login;
 
-import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojo.LoginUser;
+import pojo.LoginUserResponse;
 import utilits.PropertiesDataOfAdminPanel;
 
 import static io.restassured.RestAssured.given;
 
-import java.io.IOException;
-import java.util.HashMap;
+import java.io.IOException; 
 import java.util.List;
 
 public class LoginUserTest {
-    // @Test
-    public static void main(String[] args) throws IOException {
+    @Test
+    public void loginTest() throws IOException {
 
      //Enter userlogin credentails
        LoginUser user=new LoginUser();
@@ -32,31 +30,14 @@ public class LoginUserTest {
        RequestSpecification rsp = new RequestSpecBuilder().setBaseUri("http://43.204.100.142:8011").
        setContentType(ContentType.JSON).build();
 
-       given().spec(rsp).body(user).
+       LoginUserResponse response = given().spec(rsp).body(user).
        when().
        post("/users-services/v1/token/login").
        then().
-       log().all();
-       System.out.println("Done");
+       log().all().extract().response().as(LoginUserResponse.class);
 
-
-
-    // RequestSpecification req1 = new RequestSpecBuilder().setBaseUri("https://reqres.in/").setContentType(ContentType.JSON).build();
-    
-    // HashMap<String,String> map=new HashMap<String,String>();
-    // map.put("name","simani");
-    // map.put("job","jojo123");
- 
-    // JSONObject obj=new JSONObject(map);
-
-    // given().
-    // spec(req1).body(obj.toJSONString()).
-    // when().
-    // put("/api/users/2").
-    // then().
-    // log().all().assertThat().statusCode(200).contentType(ContentType.JSON);
-
-
+       //AccessToken
+       String accesstoken = response.getLast_access_token();
 
     }
 }
