@@ -1,0 +1,20 @@
+{
+  "longitude": null,
+  "id": 25171,
+  "is_default_shipping_address": false,
+  "customer_id": 60164,
+  "is_active": true,
+  "mobile_number": "7676714748",
+  "modified_on": "2023-02-20T12:54:33.733175",
+  "village": "Bir Moti Bagh",
+  "sub_district": "Patiala",
+  "state": "PUNJAB",
+  "latitude": null,
+  "is_default_billing_address": true,
+  "name": "Sharan",
+  "created_on": "2023-02-20T12:54:33.733174",
+  "postcode": 147001,
+  "postoffice": "Patiala H.O",
+  "district": "PATIALA",
+  "landmark": "Near bus stop"
+}

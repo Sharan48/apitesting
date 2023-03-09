@@ -1,0 +1,22 @@
+{
+    "customer_mobile": "7219245549",
+    "mac_address": "589a769e-ef8b-447e-ace5-50158a589764",
+    "currency_code": "inr",
+    "item_name": "HD-3086",
+    "item_sku": "PRSE308640",
+    "qty": "1",
+    "price": "1370",
+    "display_unit": "40.0 kg",
+    "currency_symbol": "₹",
+    "postal_code": "247001",
+    "is_inventory_check_required": false,
+    "area_type": "country",
+    "min_limit": 1,
+    "max_limit": 3,
+    "is_active": true,
+    "cart_location": "S.Hariya B.O,247001,SAHARANPUR,UTTAR PRADESH",
+    "sold_by": "EFaarms Solution Pvt. Ltd.",
+    "seller_id": 16,
+    "seller_code": "SDL-0000001602",
+    "category_id": 1
+}

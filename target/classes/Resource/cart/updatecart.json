@@ -1,0 +1,16 @@
+{
+    "customer_mobile": "7219245549",
+    "mac_address": "3f7b19b4-f72c-4b79-93de-6fbe622115cf",
+    "currency_code": "inr",
+    "item_name": "Vruddhi Gold",
+    "item_sku": "GOCFVG50KG",
+    "qty": "4",
+    "price": "1243",
+    "currency_symbol": "₹",
+    "postal_code": "247001",
+    "is_inventory_check_required": false,
+    "cart_location": "S.Hariya B.O,247001,SAHARANPUR,UTTAR PRADESH",
+    "seller_id": 16,
+	"is_active": true,
+	"is_remove": false
+}

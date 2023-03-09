@@ -1,0 +1,71 @@
+{
+    "customer_id": 60164,
+    "customer_mobile": "7219245549",
+    "employee_id": 859,
+    "alternate_mobile": "9484349134",
+    "currency_symbol": "₹",
+    "currency_code": "inr",
+    "shipping_method_id": 1,
+    "payment_method_id": "1",
+    "reference_code": "",
+    "total_amount": "6342",
+    "order_items": [
+        {
+            "currency_symbol": "₹",
+            "sku": "PRSE308640",
+            "qty": "1",
+            "is_inventory_check_required": false,
+            "price": "1370",
+            "display_unit": "40.0 kg",
+            "currency_code": "inr",
+            "name": "HD-3086",
+            "sold_by": "EFaarms Solution Pvt. Ltd.",
+            "seller_id": 16,
+            "seller_code": "SDL-0000001602",
+            "category_id": 1
+        },
+        {
+            "currency_symbol": "₹",
+            "sku": "GOCFVG50KG",
+            "qty": "4",
+            "is_inventory_check_required": false,
+            "price": "1243",
+            "display_unit": "50.0 kg",
+            "currency_code": "inr",
+            "name": "Vruddhi Gold",
+            "sold_by": "EFaarms Solution Pvt. Ltd.",
+            "seller_id": 16,
+            "seller_code": "SDL-0000001602",
+            "category_id": 5
+        }
+    ],
+    "coupon_details": [
+        {
+            "discounted_amount": 0
+        }
+    ],
+    "shipping_address": {
+        "name": "Test",
+        "mobile_number": "9484349134",
+        "landmark": "Test",
+        "postoffice": "S.Hariya B.O",
+        "postcode": "247001",
+        "village": "Ugranu Aht",
+        "sub_district": "Deoband",
+        "district": "SAHARANPUR",
+        "state": "Uttar Pradesh",
+        "is_active": "true"
+    },
+    "billing_address": {
+        "name": "Sharan12",
+        "mobile_number": "7219245549",
+        "landmark": "Besidebusstop",
+        "postoffice": "Patiala H.O",
+        "postcode": "147001",
+        "village": "Lang",
+        "sub_district": "Patiala",
+        "district": "PATIALA",
+        "state": "Punjab",
+        "is_active": "true"
+    }
+}

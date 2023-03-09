@@ -1,0 +1,22 @@
+{
+    "is_remove":true,
+    "customer_mobile": "7219245549",
+    "currency_code": "inr",
+    "item_name": "Vruddhi Gold",
+    "mac_address": "589a769e-ef8b-447e-ace5-50158a589764",
+    "display_unit": "50.0 kg",
+    "item_sku": "GOCFVG50KG",
+    "qty": "1",
+    "price": "1659",
+    "currency_symbol": "₹",
+    "postal_code": "247001",
+    "is_inventory_check_required": false,
+    "cart_location": "S.Hariya B.O,247001,SAHARANPUR,UTTAR PRADESH",
+    "area_type": "country",
+    "min_limit": 1,
+    "max_limit": 3,
+    "sold_by": "EFaarms Solution Pvt. Ltd.",
+    "seller_id": 16,
+    "seller_code": "SDL-0000001602",
+    "category_id": 5
+}
